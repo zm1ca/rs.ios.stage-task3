@@ -35,10 +35,15 @@
     }
     
     unsigned long rightNodePosition = preorder.count;
-    for (unsigned long i = 0; i < preorder.count; ++i) {
-        if (preorder[i] != [NSNull null] && [preorder[i] intValue] > [preorder[0] intValue]) {
-            rightNodePosition = i;
-            break;
+    unsigned int numberOfNulls = 0;
+    for (unsigned long i = 1; i < preorder.count; ++i) {
+        if (preorder[i] == [NSNull null]) {
+            numberOfNulls++;
+        } else {
+            if ((numberOfNulls > 0) && (i % 2 == 0) && (numberOfNulls == i >> 1)) {
+                rightNodePosition = i;
+                break;
+            }
         }
     }
     

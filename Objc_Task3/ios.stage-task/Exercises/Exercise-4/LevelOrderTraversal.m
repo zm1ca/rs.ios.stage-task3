@@ -3,10 +3,5 @@
 
 NSArray *LevelOrderTraversalForTree(NSArray *tree) {
     TreeNode *builtTree = [TreeNode treeFromPreorder:tree];
-    
-    if (builtTree == nil) {
-        return @[];
-    } else {
-        return [builtTree levelOrderTraversal];
-    }
+    return builtTree == nil ? @[] : [builtTree levelOrderTraversal];
 }
