@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "LevelOrderTraversalForTree:LevelOrderTraversal.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PlayersSeparator dividePlayersIntoTeams:]:PlayersSeparator.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "ratingArray[j]">
+            </PersistentString>
+            <PersistentString
+               value = "ratingArray[k]">
+            </PersistentString>
+            <PersistentString
+               value = "ratingArray[i]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[TreeNode treeFromPreorder:]:TreeNode.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(i + 1) &gt;&gt; 1">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TreeNode levelOrderTraversal]:TreeNode.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
