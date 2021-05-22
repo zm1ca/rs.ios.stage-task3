@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		403E7D222658FB2F00851A97 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 403E7D212658FB2F00851A97 /* TreeNode.m */; };
 		7AF396612656A588003A569D /* LevelOrderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF396602656A588003A569D /* LevelOrderTests.m */; };
 		820FABB2265679FC008CFD09 /* DateTasks.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 820FABB1265679FC008CFD09 /* DateTasks.pdf */; };
 		820FABBD26567D60008CFD09 /* NSDate+CustomDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 820FABBC26567D60008CFD09 /* NSDate+CustomDate.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		403E7D202658FB2F00851A97 /* TreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		403E7D212658FB2F00851A97 /* TreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
 		7AF396602656A588003A569D /* LevelOrderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelOrderTests.m; sourceTree = "<group>"; };
 		820FABB1265679FC008CFD09 /* DateTasks.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DateTasks.pdf; sourceTree = "<group>"; };
 		820FABBB26567D60008CFD09 /* NSDate+CustomDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CustomDate.h"; sourceTree = "<group>"; };
@@ -85,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		403E7D232658FB3600851A97 /* TreeNode */ = {
+			isa = PBXGroup;
+			children = (
+				403E7D202658FB2F00851A97 /* TreeNode.h */,
+				403E7D212658FB2F00851A97 /* TreeNode.m */,
+			);
+			path = TreeNode;
+			sourceTree = "<group>";
+		};
 		820FABC026567EFA008CFD09 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +140,7 @@
 		8275DDD2264C16A100838828 /* Exercise-4 */ = {
 			isa = PBXGroup;
 			children = (
+				403E7D232658FB3600851A97 /* TreeNode */,
 				82ADF96426558D6400D81DB7 /* LevelOrderTraversal.md */,
 				82ADF96526558D6400D81DB7 /* LevelOrderTraversal.h */,
 				82ADF95F26558D6400D81DB7 /* LevelOrderTraversal.m */,
@@ -296,6 +309,7 @@
 				82ADF96F26558D6A00D81DB7 /* LexicographicallyMinimal.m in Sources */,
 				8293ECA826346C7100CEE768 /* AppDelegate.m in Sources */,
 				8293ECB926346C7500CEE768 /* main.m in Sources */,
+				403E7D222658FB2F00851A97 /* TreeNode.m in Sources */,
 				82ADF96626558D6400D81DB7 /* LevelOrderTraversal.m in Sources */,
 				82ADF97326558D7000D81DB7 /* PlayersSeparator.m in Sources */,
 				820FABBD26567D60008CFD09 /* NSDate+CustomDate.m in Sources */,
