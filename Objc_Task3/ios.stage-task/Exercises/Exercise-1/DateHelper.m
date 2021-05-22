@@ -5,22 +5,12 @@
 #pragma mark - First
 
 -(NSString *)monthNameBy:(NSUInteger)monthNumber {
-    switch (monthNumber) {
-        case 1: return @"January";
-        case 2: return @"February";
-        case 3: return @"March";
-        case 4: return @"April";
-        case 5: return @"May";
-        case 6: return @"June";
-        case 7: return @"July";
-        case 8: return @"August";
-        case 9: return @"September";
-        case 10: return @"October";
-        case 11: return @"November";
-        case 12: return @"December";
-            
-        default: return nil;;
-    }
+    if (monthNumber < 1 || monthNumber > 12) { return nil; }
+    
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:60 * 60 * 24 * 31 * (monthNumber - 1)];
+    NSDateFormatter *dateFormatter = [NSDateFormatter new];
+    dateFormatter.dateFormat = @"MMMM";
+    return [dateFormatter stringFromDate:date];
 }
 
 #pragma mark - Second
@@ -34,16 +24,11 @@
 #pragma mark - Third
 
 - (NSString *)getDayName:(NSDate*) date {
-    switch ([[NSCalendar currentCalendar] component:NSCalendarUnitWeekday fromDate: date]) {
-        case 1: return @"Вс";
-        case 2: return @"Пн";
-        case 3: return @"Вт";
-        case 4: return @"Ср";
-        case 5: return @"Чт";
-        case 6: return @"Пт";
-        case 7: return @"Сб";
-        default: return nil;
-    }
+    NSDateFormatter *dateFormatter = [NSDateFormatter new];
+    dateFormatter.dateFormat = @"EE";
+    dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"ru_RU"];
+    NSLog(@"%@", [dateFormatter stringFromDate:date]);
+    return [dateFormatter stringFromDate:date];
 }
 
 #pragma mark - Fourth
@@ -53,11 +38,7 @@
     NSDateComponents *currentDateComponents = [calendar components:(NSCalendarUnitWeekOfYear | NSCalendarUnitYear) fromDate:[NSDate now]];
     NSDateComponents *givenDateComponents = [calendar components:(NSCalendarUnitWeekOfYear | NSCalendarUnitYear) fromDate:date];
     
-    if (currentDateComponents.year == givenDateComponents.year) {
-        return currentDateComponents.weekOfYear == givenDateComponents.weekOfYear;
-    }
-    
-    return NO;
+    return (currentDateComponents.year == givenDateComponents.year) && (currentDateComponents.weekOfYear == givenDateComponents.weekOfYear);
 }
 
 @end
