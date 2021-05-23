@@ -2,6 +2,6 @@
 #import "TreeNode.h"
 
 NSArray *LevelOrderTraversalForTree(NSArray *tree) {
-    TreeNode *builtTree = [TreeNode treeFromPreorder:tree];
+    TreeNode *builtTree = [TreeNode treeFromPreorder:[tree mutableCopy]];
     return builtTree == nil ? @[] : [builtTree levelOrderTraversal];
 }

@@ -176,5 +176,83 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "074B9994-9CB5-417C-8BC7-CD67A310F096"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios.stage-taskTests/LevelOrderTests.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-test3Nodes"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "074B9994-9CB5-417C-8BC7-CD67A310F096 - 52334bd15a65e380"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LevelOrderTests test3Nodes]"
+                  moduleName = "ios.stage-taskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zmicierfiedcanka/Developer/RSSchool/rs.ios.stage-task3/Objc_Task3/ios.stage-taskTests/LevelOrderTests.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "446">
+               </Location>
+               <Location
+                  uuid = "074B9994-9CB5-417C-8BC7-CD67A310F096 - 52334bd15a65e380"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LevelOrderTests test3Nodes]"
+                  moduleName = "ios.stage-taskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zmicierfiedcanka/Developer/RSSchool/rs.ios.stage-task3/Objc_Task3/ios.stage-taskTests/LevelOrderTests.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "1568">
+               </Location>
+               <Location
+                  uuid = "074B9994-9CB5-417C-8BC7-CD67A310F096 - 52334bd15a65e380"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LevelOrderTests test3Nodes]"
+                  moduleName = "ios.stage-taskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zmicierfiedcanka/Developer/RSSchool/rs.ios.stage-task3/Objc_Task3/ios.stage-taskTests/LevelOrderTests.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "3017">
+               </Location>
+               <Location
+                  uuid = "074B9994-9CB5-417C-8BC7-CD67A310F096 - 52334bd15a65e380"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LevelOrderTests test3Nodes]"
+                  moduleName = "ios.stage-taskTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zmicierfiedcanka/Developer/RSSchool/rs.ios.stage-task3/Objc_Task3/ios.stage-taskTests/LevelOrderTests.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "3128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

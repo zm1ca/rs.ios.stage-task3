@@ -6,11 +6,7 @@
 
 -(NSString *)monthNameBy:(NSUInteger)monthNumber {
     if (monthNumber < 1 || monthNumber > 12) { return nil; }
-    
-    NSDate *date = [NSDate dateWithTimeIntervalSince1970:60 * 60 * 24 * 31 * (monthNumber - 1)];
-    NSDateFormatter *dateFormatter = [NSDateFormatter new];
-    dateFormatter.dateFormat = @"MMMM";
-    return [dateFormatter stringFromDate:date];
+    return [[NSDateFormatter new] monthSymbols][monthNumber - 1];
 }
 
 #pragma mark - Second

@@ -17,9 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithValue:(NSNumber *)value;
 + (instancetype)treeNodeWithValue:(NSNumber *)value;
-+ (instancetype)treeFromPreorder:(NSArray *)preorder;
++ (instancetype)treeFromPreorder:(NSMutableArray *)preorder;
 - (NSArray<NSArray *> *)levelOrderTraversal;
-- (void)appendLevelOrderTraversalResultsTo: (NSMutableArray **)array;
+- (void)appendLevelOrderTraversalResultsTo: (NSMutableArray *_Nonnull*_Nonnull)array;
 
 @end
 
