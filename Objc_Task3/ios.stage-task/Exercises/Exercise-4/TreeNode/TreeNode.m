@@ -48,15 +48,13 @@
     NSMutableArray<NSMutableArray *> *result = [NSMutableArray new];
     
     [result addObject:[NSMutableArray arrayWithObject:self.value]];
-    [self.leftNode  appendLevelOrderTraversalResultsTo:&result];
-    [self.rightNode appendLevelOrderTraversalResultsTo:&result];
+    [self.leftNode  appendLevelOrderTraversalResultsTo:result];
+    [self.rightNode appendLevelOrderTraversalResultsTo:result];
     
     return result;
 }
 
-- (void)appendLevelOrderTraversalResultsTo:(NSMutableArray **)array {
-    NSMutableArray *result = *array;
-    
+- (void)appendLevelOrderTraversalResultsTo:(NSMutableArray *)result {
     NSArray<NSArray *> *rightNodeResult = [self levelOrderTraversal];
     for (int i = 0; i < rightNodeResult.count; ++i) {
         if (i + 1 < result.count) {

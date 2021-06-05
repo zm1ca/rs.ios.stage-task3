@@ -23,7 +23,6 @@
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
     dateFormatter.dateFormat = @"EE";
     dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"ru_RU"];
-    NSLog(@"%@", [dateFormatter stringFromDate:date]);
     return [dateFormatter stringFromDate:date];
 }
 

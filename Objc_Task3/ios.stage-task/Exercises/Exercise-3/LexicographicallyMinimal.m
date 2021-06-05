@@ -14,8 +14,6 @@
     NSMutableString *result = [NSMutableString new];
     
     while ((mutableString1.length != 0) && (mutableString2.length != 0)) {
-        [mutableString1 characterAtIndex:0];
-        
         if ([mutableString1 UTF8String][0] <= [mutableString2 UTF8String][0]) {
             [result appendFormat:@"%c", [mutableString1 characterAtIndex:0]];
             [mutableString1 deleteCharactersInRange:NSMakeRange(0, 1)];
